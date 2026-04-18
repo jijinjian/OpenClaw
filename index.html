@@ -143,9 +143,9 @@
     .empty-state p { font-size: 0.95rem; line-height: 1.7; }
     .empty-state span { color: var(--accent); font-weight: 500; }
     .table-wrap { overflow-x: auto; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 1.05rem; }
     thead th {
-      background: #131f30; color: var(--muted); font-size: 0.72rem; font-weight: 700;
+      background: #131f30; color: var(--muted); font-size: 0.875rem; font-weight: 700;
       text-transform: uppercase; letter-spacing: 0.07em; padding: 12px 20px;
       text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap;
     }
@@ -154,10 +154,10 @@
     tbody tr:hover { background: #162032; }
     td { padding: 16px 20px; vertical-align: top; line-height: 1.6; }
     .td-name { min-width: 200px; }
-    .mit-name { font-weight: 600; color: var(--text); font-size: 0.9rem; line-height: 1.4; }
+    .mit-name { font-weight: 600; color: var(--text); font-size: 1.05rem; line-height: 1.4; }
     .mit-id { display: inline-block; background: #1a2f47; color: #475569; font-size: 0.68rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-bottom: 5px; letter-spacing: 0.05em; font-family: monospace; }
-    .comp-badge { display: block; background: #162840; border: 1px solid #2a4462; color: #7dd3fc; font-size: 0.72rem; padding: 3px 10px; border-radius: 999px; margin: 2px 0; white-space: nowrap; font-weight: 500; width: fit-content; }
-    .pill { display: inline-flex; align-items: center; gap: 5px; font-size: 0.75rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; white-space: nowrap; }
+    .comp-badge { display: block; background: #162840; border: 1px solid #2a4462; color: #7dd3fc; font-size: 0.875rem; padding: 3px 10px; border-radius: 999px; margin: 2px 0; white-space: nowrap; font-weight: 500; width: fit-content; }
+    .pill { display: inline-flex; align-items: center; gap: 5px; font-size: 0.9rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; white-space: nowrap; }
     .pill::before { content:''; display:inline-block; width:6px; height:6px; border-radius:50%; }
     .pill-High   { background:#052e16; color:#34d399; border:1px solid #064e30; }
     .pill-High::before   { background:#34d399; }
@@ -165,9 +165,9 @@
     .pill-Medium::before { background:#93c5fd; }
     .pill-Low    { background:#450a0a; color:#f87171; border:1px solid #7f1d1d; }
     .pill-Low::before    { background:#f87171; }
-    .arc-pill { font-family:'SF Mono','Fira Code',monospace; font-size:0.75rem; color:#a78bfa; background:#1a1333; border:1px solid #2d1f5e; padding:3px 10px; border-radius:6px; white-space:nowrap; }
+    .arc-pill { font-family:'SF Mono','Fira Code',monospace; font-size:0.9rem; color:#a78bfa; background:#1a1333; border:1px solid #2d1f5e; padding:3px 10px; border-radius:6px; white-space:nowrap; }
     .desc-text { color:#cbd5e1; font-size:0.875rem; line-height:1.6; min-width:200px; }
-    .impl-list { margin:0; padding-left:18px; color:#94a3b8; font-size:0.875rem; line-height:1.7; }
+    .impl-list { margin:0; padding-left:18px; color:#ffffff; font-size:1rem; line-height:1.7; }
     .impl-list li { margin-bottom:2px; }
 
     @media (max-width:900px) {
@@ -461,7 +461,6 @@ function renderTable() {
     const implItems = m.impl.map(pt=>'<li>'+esc(pt)+'</li>').join('');
     return '<tr>' +
       '<td class="td-name"><div class="mit-id">M-'+String(m.id).padStart(2,'0')+'</div><div class="mit-name">'+esc(m.name)+'</div></td>' +
-      '<td style="min-width:200px"><span class="desc-text">'+esc(m.desc)+'</span></td>' +
       '<td><span class="pill pill-'+m.effectiveness+'">'+m.effectiveness+'</span></td>' +
       '<td style="min-width:280px"><ul class="impl-list">'+implItems+'</ul></td>' +
       '<td><span class="arc-pill">'+esc(m.arc)+'</span></td>' +
@@ -473,7 +472,6 @@ function renderTable() {
     '<div class="table-wrap"><table>' +
     '<thead><tr>' +
       '<th style="min-width:200px">Mitigation</th>' +
-      '<th style="min-width:200px">Description</th>' +
       '<th style="min-width:110px">Effectiveness</th>' +
       '<th style="min-width:280px">Implementation Example</th>' +
       '<th style="min-width:90px">ARC Mapping</th>' +
