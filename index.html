@@ -27,21 +27,21 @@
       background: linear-gradient(90deg,#e2e8f0 60%,#60a5fa); -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; background-clip: text;
     }
-    .subtitle { color: var(--muted); font-size: 0.875rem; line-height: 1.6; }
+    .subtitle { color: var(--muted); font-size: 1rem; line-height: 1.6; }
 
     /* ── Controls ── */
     .controls { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
     .btn-reset {
       background: var(--surface); border: 1px solid var(--border); color: var(--text);
-      padding: 7px 18px; border-radius: 8px; cursor: pointer; font-size: 0.8125rem;
+      padding: 7px 18px; border-radius: 8px; cursor: pointer; font-size: 0.95rem;
       font-family: var(--font); font-weight: 500; display: flex; align-items: center; gap: 6px;
       transition: background 0.15s, border-color 0.15s, color 0.15s;
     }
     .btn-reset:hover { background: #273549; border-color: var(--accent); color: var(--accent); }
-    .counter { color: var(--muted); font-size: 0.875rem; }
+    .counter { color: var(--muted); font-size: 1rem; }
     .counter b { color: var(--accent); font-weight: 700; }
     .legend { display: flex; gap: 16px; flex-wrap: wrap; }
-    .legend-item { display: flex; align-items: center; gap: 7px; font-size: 0.775rem; color: var(--muted); }
+    .legend-item { display: flex; align-items: center; gap: 7px; font-size: 0.9rem; color: var(--muted); }
     .legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
 
     /* ── Diagram card ── */
@@ -50,7 +50,7 @@
       padding: 20px; margin-bottom: 28px;
     }
     .diagram-hint {
-      text-align: center; font-size: 0.75rem; color: #334155; margin-bottom: 12px; letter-spacing: 0.03em;
+      text-align: center; font-size: 0.9rem; color: #334155; margin-bottom: 12px; letter-spacing: 0.03em;
     }
 
     /* ── 3-col layout: [left panel] [image] [right panel] ── */
@@ -60,7 +60,7 @@
     .image-wrap {
       position: relative; flex: 1 1 auto; min-width: 0; border-radius: 8px; overflow: hidden;
     }
-    .arch-img { display: block; width: 100%; height: auto; border-radius: 8px; }
+    .arch-img { display: block; width: 93%; height: auto; border-radius: 8px; margin: 0 auto; }
 
     /* ── Hotspot overlays ── */
     .hotspot {
@@ -97,7 +97,7 @@
       max-height: 420px; overflow-y: auto;
     }
     .panel-empty {
-      color: #334155; font-size: 0.75rem; text-align: center;
+      color: #334155; font-size: 0.9rem; text-align: center;
       padding: 24px 12px; border: 1px dashed #263345; border-radius: 10px;
       line-height: 1.5;
     }
@@ -106,7 +106,7 @@
       border-radius: 10px; padding: 12px; flex-shrink: 0;
     }
     .panel-comp-name {
-      font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+      font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
       color: var(--muted); margin-bottom: 10px; padding-bottom: 7px;
       border-bottom: 1px solid var(--border);
     }
@@ -121,12 +121,12 @@
     .mit-dot-high   { background: #10b981; box-shadow: 0 0 4px rgba(16,185,129,0.6); }
     .mit-dot-medium { background: #60a5fa; box-shadow: 0 0 4px rgba(96,165,250,0.6); }
     .mit-dot-low    { background: #ef4444; box-shadow: 0 0 4px rgba(239,68,68,0.6); }
-    .mit-item-text { font-size: 0.75rem; line-height: 1.4; }
+    .mit-item-text { font-size: 0.9rem; line-height: 1.4; }
     .mit-item-high   { color: #6ee7b7; }
     .mit-item-medium { color: #93c5fd; }
     .mit-item-low    { color: #fca5a5; }
     .mit-item-id {
-      font-size: 0.62rem; font-weight: 700; opacity: 0.5;
+      font-size: 0.75rem; font-weight: 700; opacity: 0.5;
       font-family: 'SF Mono', monospace; margin-right: 3px;
     }
 
@@ -136,8 +136,8 @@
       display: flex; align-items: center; justify-content: space-between;
       padding: 18px 24px; border-bottom: 1px solid var(--border);
     }
-    .section-header h2 { font-size: 1rem; font-weight: 600; }
-    .badge-count { background: #162840; color: var(--accent); font-size: 0.72rem; font-weight: 700; padding: 3px 12px; border-radius: 999px; border: 1px solid #1e3a5f; }
+    .section-header h2 { font-size: 1.15rem; font-weight: 600; }
+    .badge-count { background: #162840; color: var(--accent); font-size: 0.875rem; font-weight: 700; padding: 3px 12px; border-radius: 999px; border: 1px solid #1e3a5f; }
     .empty-state { text-align: center; padding: 72px 24px; color: var(--muted); }
     .empty-icon { font-size: 2.6rem; margin-bottom: 14px; }
     .empty-state p { font-size: 0.95rem; line-height: 1.7; }
@@ -155,7 +155,7 @@
     td { padding: 16px 20px; vertical-align: top; line-height: 1.6; }
     .td-name { min-width: 200px; }
     .mit-name { font-weight: 600; color: var(--text); font-size: 1.05rem; line-height: 1.4; }
-    .mit-id { display: inline-block; background: #1a2f47; color: #475569; font-size: 0.68rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-bottom: 5px; letter-spacing: 0.05em; font-family: monospace; }
+    .mit-id { display: inline-block; background: #1a2f47; color: #475569; font-size: 0.8rem; font-weight: 700; padding: 1px 6px; border-radius: 4px; margin-bottom: 5px; letter-spacing: 0.05em; font-family: monospace; }
     .comp-badge { display: block; background: #162840; border: 1px solid #2a4462; color: #7dd3fc; font-size: 0.875rem; padding: 3px 10px; border-radius: 999px; margin: 2px 0; white-space: nowrap; font-weight: 500; width: fit-content; }
     .pill { display: inline-flex; align-items: center; gap: 5px; font-size: 0.9rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; white-space: nowrap; }
     .pill::before { content:''; display:inline-block; width:6px; height:6px; border-radius:50%; }
