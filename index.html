@@ -55,7 +55,7 @@
 
     /* ── 3-col layout: [left panel] [image] [right panel] ── */
     .diagram-row {
-      display: flex; gap: 14px; align-items: flex-start;
+      display: flex; gap: 0; align-items: flex-start;
     }
     .image-wrap {
       position: relative; flex: 1 1 auto; min-width: 0; border-radius: 8px; overflow: hidden;
@@ -116,7 +116,7 @@
     }
     .mit-item:last-child { border-bottom: none; padding-bottom: 0; }
     .mit-dot {
-      width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 4px;
+      display: none;
     }
     .mit-dot-high   { background: #10b981; box-shadow: 0 0 4px rgba(16,185,129,0.6); }
     .mit-dot-medium { background: #60a5fa; box-shadow: 0 0 4px rgba(96,165,250,0.6); }
